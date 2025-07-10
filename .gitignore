@@ -13,9 +13,12 @@ __pycache__/
 
 # Ignore environment variables
 .env
+<<<<<<< HEAD
 proteinas_20000_enriquecido.csv
 output/ # Also ignore generated files
 proteinas_20000_enriquecido.csv
 output/
 *.pth
 *.log
+=======
+>>>>>>> 564557607fcec9740a5ba8dd7d5d99ae6d4db307
