@@ -1,0 +1,21 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+.venv/
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore environment variables
+.env
+proteinas_20000_enriquecido.csv
+output/ # Also ignore generated files
+proteinas_20000_enriquecido.csv
+output/
+*.pth
+*.log
