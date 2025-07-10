@@ -1,0 +1,19 @@
+2025-07-10 10:32:47,209 - utils - INFO - ==================================================
+2025-07-10 10:32:47,209 - utils - INFO - 🔧 SYSTEM & CONFIGURATION
+2025-07-10 10:32:47,209 - utils - INFO - ==================================================
+2025-07-10 10:32:47,209 - utils - INFO - Device: mps
+2025-07-10 10:32:47,209 - utils - INFO - PyTorch Version: 2.7.1
+2025-07-10 10:32:47,209 - utils - INFO - Model: facebook/esm2_t12_35M_UR50D
+2025-07-10 10:32:47,209 - utils - INFO - Batch Size: 16
+2025-07-10 10:32:47,209 - utils - INFO - Epochs: 5
+2025-07-10 10:32:47,209 - utils - INFO - Learning Rate: 2e-05
+2025-07-10 10:32:47,209 - utils - INFO - ==================================================
+2025-07-10 10:32:47,209 - data_processor - INFO - --- Starting Data Processing ---
+2025-07-10 10:32:47,209 - data_processor - INFO - Loading data from proteinas_20000_enriquecido.csv...
+2025-07-10 10:32:47,455 - data_processor - INFO - Removed 0 rows with missing sequences.
+2025-07-10 10:32:47,604 - data_processor - INFO - Class mapping: {0: 'Enzima', 1: 'Estrutural', 2: 'Outras', 3: 'Receptora', 4: 'Transporte'}
+2025-07-10 10:32:47,654 - data_processor - INFO - Data split: Train=42000, Val=6000, Test=12000
+2025-07-10 10:32:47,655 - data_processor - INFO - --- Data Processing Complete ---
+2025-07-10 10:32:49,080 - tokenizer - INFO - DataLoaders created.
+2025-07-10 10:32:49,080 - models - INFO - Initializing ProteinClassifier with facebook/esm2_t12_35M_UR50D
+2025-07-10 10:32:53,306 - trainer - INFO - --- Starting Model Training ---

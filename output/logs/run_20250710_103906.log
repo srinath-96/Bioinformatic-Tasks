@@ -1,0 +1,54 @@
+2025-07-10 10:39:06,480 - utils - INFO - ==================================================
+2025-07-10 10:39:06,480 - utils - INFO - 🔧 SYSTEM & CONFIGURATION
+2025-07-10 10:39:06,480 - utils - INFO - ==================================================
+2025-07-10 10:39:06,480 - utils - INFO - Device: mps
+2025-07-10 10:39:06,480 - utils - INFO - PyTorch Version: 2.7.1
+2025-07-10 10:39:06,480 - utils - INFO - Model: facebook/esm2_t6_8M_UR50D
+2025-07-10 10:39:06,480 - utils - INFO - Batch Size: 4
+2025-07-10 10:39:06,480 - utils - INFO - Epochs: 5
+2025-07-10 10:39:06,480 - utils - INFO - Learning Rate: 2e-05
+2025-07-10 10:39:06,480 - utils - INFO - ==================================================
+2025-07-10 10:39:06,480 - data_processor - INFO - --- Starting Data Processing ---
+2025-07-10 10:39:06,480 - data_processor - INFO - Loading data from proteinas_20000_enriquecido.csv...
+2025-07-10 10:39:06,670 - data_processor - INFO - Removed 0 rows with missing sequences.
+2025-07-10 10:39:06,790 - data_processor - INFO - Class mapping: {0: 'Enzima', 1: 'Estrutural', 2: 'Outras', 3: 'Receptora', 4: 'Transporte'}
+2025-07-10 10:39:06,834 - data_processor - INFO - Data split: Train=42000, Val=6000, Test=12000
+2025-07-10 10:39:06,834 - data_processor - INFO - --- Data Processing Complete ---
+2025-07-10 10:39:07,766 - tokenizer - INFO - DataLoaders created.
+2025-07-10 10:39:07,766 - models - INFO - Initializing ProteinClassifier with facebook/esm2_t6_8M_UR50D
+2025-07-10 10:39:09,425 - trainer - INFO - --- Starting Model Training ---
+2025-07-10 11:56:52,005 - trainer - INFO - Epoch 1/5 | Train Loss: 1.6139 | Val Loss: 1.6101 | Val Acc: 20.05%
+2025-07-10 11:56:52,197 - trainer - INFO - 🏆 New best model saved with accuracy: 20.05%
+2025-07-10 13:23:58,597 - trainer - INFO - Epoch 2/5 | Train Loss: 1.6107 | Val Loss: 1.6103 | Val Acc: 21.00%
+2025-07-10 13:23:58,793 - trainer - INFO - 🏆 New best model saved with accuracy: 21.00%
+2025-07-10 14:29:09,052 - trainer - INFO - Epoch 3/5 | Train Loss: 1.6032 | Val Loss: 1.6135 | Val Acc: 20.40%
+2025-07-10 15:58:15,453 - trainer - INFO - Epoch 4/5 | Train Loss: 1.5664 | Val Loss: 1.6481 | Val Acc: 20.03%
+2025-07-10 17:18:12,831 - trainer - INFO - Epoch 5/5 | Train Loss: 1.4102 | Val Loss: 1.7726 | Val Acc: 20.67%
+2025-07-10 17:18:12,835 - trainer - INFO - --- Model Training Complete ---
+2025-07-10 17:18:12,850 - evaluator - INFO - --- Starting Model Evaluation on Test Set ---
+2025-07-10 17:25:26,197 - evaluator - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      Enzima       0.19      0.12      0.15      2391
+  Estrutural       0.19      0.18      0.19      2398
+      Outras       0.14      0.00      0.00      2443
+   Receptora       0.21      0.07      0.11      2370
+  Transporte       0.20      0.63      0.30      2398
+
+    accuracy                           0.20     12000
+   macro avg       0.19      0.20      0.15     12000
+weighted avg       0.19      0.20      0.15     12000
+
+2025-07-10 17:25:27,234 - evaluator - INFO - Confusion matrix saved to output/results/confusion_matrix.png
+2025-07-10 17:25:27,251 - evaluator - INFO - --- Model Evaluation Complete ---
+2025-07-10 17:25:27,287 - traditional_ml - INFO - --- Starting Traditional ML Comparison ---
+2025-07-10 17:25:27,341 - traditional_ml - INFO - Training Logistic Regression...
+2025-07-10 17:25:27,617 - traditional_ml - INFO - Logistic Regression -> Accuracy: 0.1986, Weighted F1: 0.1801
+2025-07-10 17:25:27,617 - traditional_ml - INFO - Training Random Forest...
+2025-07-10 17:25:43,036 - traditional_ml - INFO - Random Forest -> Accuracy: 0.1929, Weighted F1: 0.1927
+2025-07-10 17:25:43,037 - traditional_ml - INFO - Training Support Vector Machine...
+2025-07-10 17:27:12,968 - traditional_ml - INFO - Support Vector Machine -> Accuracy: 0.2011, Weighted F1: 0.1893
+2025-07-10 17:27:12,969 - traditional_ml - INFO - --- Traditional ML Comparison Complete ---
+2025-07-10 17:27:13,030 - root - INFO - Results saved to output/results/final_summary.json
+2025-07-10 17:27:13,318 - root - INFO - Training history plot saved to output/results/training_history.png
+2025-07-10 17:27:13,318 - utils - INFO - 🎉 Project completed successfully!
