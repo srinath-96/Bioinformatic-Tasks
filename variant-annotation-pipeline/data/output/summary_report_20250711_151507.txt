@@ -1,0 +1,10 @@
+VARIANT ANNOTATION PIPELINE SUMMARY REPORT
+==================================================
+
+Generated: 2025-07-11T15:15:07.548333
+Total Variants Processed: 10
+Overall Success Rate: 63.3%
+
+RECOMMENDATIONS
+---------------
+1. Analysis completed successfully. All metrics are within expected ranges.

@@ -1,0 +1,36 @@
+# Core dependencies
+crewai>=0.28.0
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# LangChain and LLM providers
+langchain>=0.1.0
+langchain-openai>=0.1.0
+langchain-anthropic>=0.1.0
+langchain-google-genai>=1.0.0
+langchain-community>=0.0.20
+openai>=1.0.0
+anthropic>=0.18.0
+google-generativeai>=0.3.0
+
+# Configuration management
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+
+# Bioinformatics
+pysam>=0.21.0
+cyvcf2>=0.30.0
+
+# Data processing
+openpyxl>=3.1.0
+beautifulsoup4>=4.12.0
+
+# Utilities
+pydantic>=2.0.0
+tqdm>=4.66.0
+rich>=13.0.0
+
+# Optional: for advanced features
+plotly>=5.15.0
+jinja2>=3.1.0 

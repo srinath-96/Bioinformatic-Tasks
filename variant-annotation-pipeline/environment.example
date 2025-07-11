@@ -1,0 +1,82 @@
+# =============================================================================
+# Agentic Variant Annotation Pipeline - Environment Configuration
+# =============================================================================
+# Copy this file to .env and fill in your actual API keys and settings
+
+# =============================================================================
+# LLM Configuration
+# =============================================================================
+
+# Choose your LLM provider: "openai", "anthropic", "azure", "ollama"
+LLM_PROVIDER=openai
+
+# Model configuration based on provider
+LLM_MODEL=gpt-4
+# Alternative models:
+# For OpenAI: gpt-4, gpt-3.5-turbo
+# For Anthropic: claude-3-sonnet-20240229, claude-3-haiku-20240307
+# For Azure: your-deployed-model-name
+# For Ollama: llama2, codellama, mistral
+
+# LLM parameters
+LLM_TEMPERATURE=0.1
+LLM_MAX_TOKENS=4000
+
+# =============================================================================
+# API Keys
+# =============================================================================
+
+# OpenAI API Key (if using OpenAI)
+OPENAI_API_KEY=your-openai-api-key-here
+
+# Anthropic API Key (if using Anthropic/Claude)
+ANTHROPIC_API_KEY=your-anthropic-api-key-here
+
+# Azure OpenAI Configuration (if using Azure)
+AZURE_OPENAI_KEY=your-azure-openai-key-here
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+
+# Generic LLM API Key (for other providers)
+LLM_API_KEY=your-llm-api-key-here
+LLM_API_BASE=https://your-llm-api-base-url
+
+# =============================================================================
+# Pipeline Configuration
+# =============================================================================
+
+# Maximum variants to process per batch
+MAX_VARIANTS_PER_BATCH=100
+
+# Minimum quality score for variant filtering
+MIN_QUALITY_SCORE=20.0
+
+# Logging level: DEBUG, INFO, WARNING, ERROR
+LOG_LEVEL=INFO
+
+# =============================================================================
+# Annotation API Configuration (Optional Overrides)
+# =============================================================================
+
+# Rate limiting for external APIs (requests per second)
+MYVARIANT_RATE_LIMIT=10
+ENSEMBL_RATE_LIMIT=15
+CLINVAR_RATE_LIMIT=3
+
+# API timeouts (seconds)
+API_TIMEOUT=30
+
+# =============================================================================
+# Advanced Configuration
+# =============================================================================
+
+# Maximum concurrent annotation requests
+MAX_CONCURRENT_REQUESTS=5
+
+# Enable annotation caching
+CACHE_ANNOTATIONS=true
+CACHE_TTL_HOURS=24
+
+# CrewAI configuration
+CREW_VERBOSE=true
+CREW_MEMORY=true
+CREW_MAX_EXECUTION_TIME=300 
