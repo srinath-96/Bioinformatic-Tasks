@@ -36,7 +36,7 @@ api_keys:
   anthropic: "your-anthropic-api-key-here"
   
   # Google API Key (if using Gemini)
-  google: "AIzaSyAnPuDQD_LAsndOQ3UTjd9caA1mulajcF4"
+  google: "your-google-api-key-here"
   
   # Azure OpenAI Configuration (if using Azure)
   azure:
